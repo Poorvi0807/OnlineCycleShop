@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+    <style>
+
+        body{
+            background-color: #464445;
+            padding-top: 10%;
+        }
+
+        #parent{
+            margin-top: 50%;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            margin: auto;
+            width: 50%;
+            height: fit-content;
+            background-color: white;
+            border-radius: 10px;
+            max-width: fit-content;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            }
+
+           
+   #parent .close{
+    color:black;
+    font-size: 30px;
+    /* font-weight: 400; */
+    opacity: 3;
+    position:absolute;
+    right: -30px;
+    top: -20px;
+    background-color: transparent;
+    border: none;
+
+}
+
+#parent .close:hover{
+    color: #ff0000;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    border-radius: 50%;
+}
+
+        #right{
+            background-color: #313031;
+            color: white;
+            text-align: center;
+           
+            padding: 30px;
+            padding-top: 0px;
+            
+            position: relative;
+            border-radius: 10px;
+        }
+
+      
+        #input
+        {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+        }
+        
+       
+
+        
+       input{
+        text-align: center;
+        height: 20px;
+        border: none;
+        border-radius: 2px;
+       }
+
+       #submit{
+        height: 20px;
+        background-color: black;
+        color: white;
+        border: none;
+        /* padding: 15px; */
+        font-weight: 600;
+        border-radius: 2px;
+        
+       }
+       #submit:hover{
+        cursor: pointer;
+       }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+            
+            <div id="right">
+            <button type="button" onclick="closeform()" class="close" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <div id="form">
+                        <h2>Login</h2>
+                         <div id="input">
+                            <input id="username" type="text" placeholder="UsernameOrEmail">
+                            <input type="password" id="password" placeholder="Password">
+                        
+                            <button id="submit" onclick="continuefun()" >Continue</button>
+                            <span>Don't have an account? <a href="signup1.html" class="signupform">Signup</a></span>
+                        </div>
+                        
+                        <P>By continiuing , I accept Terms and Conditions & Privacy Policy.</P>
+               </div>
+        </div>
+    </div>
+</body>
+<script>
+
+
+function closeform()
+{
+    let btn = document.getElementById("parent")
+    // btn.style.display="none" 
+    window.location.href="index.html";
+}
+  
+    var users = JSON.parse(localStorage.getItem("users"));
+    
+    function continuefun()
+    {
+        var usrEml= document.querySelector("#username").value; 
+        var password= document.querySelector("#password").value;
+
+        ifExist = false;
+        users.map((e)=>{
+        if((e.username == usrEml || e.email == usrEml) && e.password == password){
+            ifExist = true;
+        }
+    })
+
+    if (ifExist) {
+        window.location.href="index.html";
+    } else {
+        alert('Invalid Username/Password');
+        window.location.reload();
+    }
+    // if(data.username==)
+    // var username= document.querySelector("#username").value;    
+    // localStorage.setItem("username", JSON.stringify(username)) 
+    }
+
+</script>
+</html>
