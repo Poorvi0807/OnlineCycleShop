@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="https://www.specialized.com/_ui/addons/specializedstorefrontaddon/desktop/common/images/favicon.ico?v=1.1"/>
+    <title>Payment Successful</title>
+    <link rel="icon" type="images/x-icon" href="https://bstudio-assets.azureedge.net/assets-builder/uploads/application/new_app_builder_icon/5b8cd7920b82ec2d09173049/Netmeds.svg" sizes="96x96"/>
+    <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"  />
+    <script src="https://kit.fontawesome.com/f5664c1180.js"  crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&family=Roboto+Condensed:wght@400;700&family=Wix+Madefor+Text:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+      /* ______________nabar__________ */
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color:#1c1c1c;
+  font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Wix Madefor Text', sans-serif;
+}
+#navbar{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1c1c1c;
+
+}
+#nav{
+  width: 90%;
+  margin: auto;
+  padding-top:20px ;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: aliceblue;
+  font-size: 13px;
+  border-bottom: 1px solid white;
+}
+#nav_search_box input{
+  margin: 0;
+  border: none;
+  padding:10px;
+  border-radius:16px 0px 0px 16px;
+  height: 100%;
+  width: 80%;
+  background-color: #1c1c1c;
+  color: aliceblue;
+}
+#nav_search_box input:focus{
+border: none;
+outline: none;
+}
+#nav_search_box button{
+  margin-left: -4px;
+  border: none;
+  border-radius:0px 16px 16px 0px;
+  height: 100%;
+  width: 20%;
+  background-color: #1c1c1c;
+  color: aliceblue;
+}
+#nav_search_box{
+  width: 25%;
+  height: 30px;
+  padding: 2px;
+  border-radius: 50px;
+border: 2px solid aliceblue;
+}
+
+#nav-mid{
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: space-between;
+}
+
+#nav-mid>div:first-child{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#nav-end{
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#nav a{
+text-decoration: none;
+color: aliceblue;
+}
+#nav-end .profile{
+  background-color: transparent;
+  color: aliceblue;
+  border: none;
+}
+#nav-end .profile:hover{
+  cursor: pointer;
+}
+/* ________sub______nav */
+
+
+#subnav{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  
+  /* border: 1px solid red; */
+  align-items: center;
+}
+
+#subnav div:last-child a{ 
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(167, 159, 159);
+}
+#subnav div:first-child{
+  color: rgb(167, 159, 159);
+}
+
+#subnav div:first-child span{
+  color: aliceblue;
+}
+#subnav div:first-child{
+  width: 170px;
+  display: flex;
+ align-items: center;
+}
+
+#subnav div:first-child img{
+  width: 22px;
+  height: 22px;
+  /* border: 1px solid pink; */
+}
+
+
+/* __________footer___________ */
+
+#footer{
+  /* background-color: pink; */
+  /* border: 1px solid green; */
+  width: 90%;
+  margin: auto;
+  color: aliceblue;
+  margin-top: 90px;
+}
+#footer a{
+ text-decoration: none;
+ color: aliceblue;
+}
+.Social_media{
+  width: 15%;
+  display: flex;
+ justify-content: space-around;
+ flex-direction: column;
+}
+.Social_media div{
+  display: flex;
+ /* align-items: center; */
+}
+
+.Social_media div:last-child{
+  width: 80%;
+  display: flex;
+  color: aliceblue;
+  justify-content: space-between;
+}
+
+.footer_top{
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.abouth{
+  width: 65%;
+ display: flex;
+ justify-content: space-evenly;
+}
+
+.abouth div{
+  display: flex;
+  flex-direction: column;
+}
+
+.abouth div a{
+  font-size: 94%;
+  /* font-weight: 600; */
+ 
+padding: 8px 0px;
+}
+
+.newsletter{
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+}
+.newsletter div{
+  margin-top: 20px;
+  width: 80%;
+  height: 80%;
+/* border: 1px solid red; */
+}
+
+.newsletter div input{
+  height: 40px;
+  width: 70%;
+  border-radius:10px 0px 0px 10px;
+  background-color: #1c1c1c;
+  border: 2px solid #747474;
+  color: aliceblue;
+  text-align: justify;
+}
+.newsletter div input:focus{
+  outline: #747474;
+  
+}
+.newsletter div input::placeholder{
+  font-size: 17px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Wix Madefor Text', sans-serif;
+}
+.newsletter p{
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Wix Madefor Text', sans-serif;
+  font-weight: 500;
+  padding-right:30px ;
+  line-height: 20px;
+}
+.newsletter #terms_con{
+  text-decoration: underline;
+}
+.newsletter div button{
+  width: 29%;
+  height: 45px;
+  padding-bottom: 4px;
+  border: none;
+  /* border: 2px dolid #747474; */
+  border-radius: 0px 10px 10px 0px;
+  margin-left: -10px;
+  background-color: #747474;
+  color: #1c1c1c;
+  font-size: 16px;
+}
+.footer-bottom{
+  padding-top:80px ;
+  text-align: center;
+  margin: auto;
+ 
+}
+/* ____________________- */
+      #loading {
+        width: 100%;
+        height: 100vh;
+        background: #ffffff url('Molecular DNA.gif') no-repeat center;
+        position: fixed;
+        z-index: 99999;
+      }
+      body {
+        /* background-color: white; */
+        background-color: #1f2322;
+        background-image: url("./logos/thankyou_bg.png");
+      }
+      #companylogo {
+        display: flex;
+        justify-content: right;
+        height: 90px;
+        margin-top: -30px;
+        margin-bottom: -30px;
+      }
+      
+      #container {
+      position: fixed;
+      top: -2%;
+      text-align: center;
+      left: 5%;
+      
+      }
+      #logo {
+        width: 100%;
+        padding: 20px 0;
+        font-size: 100px;
+        color: aliceblue;
+      }
+      h1 {
+        color: aliceblue;
+        letter-spacing: 5px;
+        font-size: 45px;
+      }
+      
+      #thank{
+        margin-left:10px;
+       color: aliceblue;
+       font-size: 18px;
+       letter-spacing: 2px;
+      } 
+      button{
+        border: none;
+        background-color: transparent;
+        color: aliceblue;
+        font-size: 17px;
+        border: 2px solid #c68409;
+        padding: 10px 15px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body id="body" onload="myFunction()">
+ 
+      <div id="header"></div>
+    <div id="loading"></div>
+
+    <div id="container">
+      <h1 id="logo"><i class="fa-regular fa-circle-check fa-fade"></i></h1>
+      <h1>Your Payment is Successful !</h1>
+      <p id="thank">
+        Thankyou for your payment <br/> <br/> 
+        Redirecting to Home Page...
+      </p>
+      <button onclick="window.location.href='index.html'">
+        Back to Home
+      </button>
+    </div>
+ 
+  </body>
+  <script src="thankyou.js">
+  
+  </script>
+</html>
+<scriptsrc="https://kit.fontawesome.com/3244e8e1e6.js" crossorigin="anonymous"></script>
