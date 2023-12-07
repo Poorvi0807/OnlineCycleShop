@@ -70,8 +70,8 @@
                     cartItem.classList.add('cart-item');
                     cartItem.id = item.id;
     
-                    const img = new Image();
-                    img.src = item.large_img;
+                    // const img = new Image();
+                    // img.src = item.large_img;
     
                     const itemDetails = document.createElement('div');
                     itemDetails.classList.add('item-details');
@@ -105,9 +105,9 @@
     
                     subtotal.append(subtotalPrice);
     
-                    itemDetails.append(itemTitle, itemPrice, quantity);
-                    cartItem.append(img, itemDetails, subtotal);
-                    parent.append(cartItem);
+                    // itemDetails.append(itemTitle, itemPrice, quantity);
+                    // cartItem.append(img, itemDetails, subtotal);
+                    // parent.append(cartItem);
     
                     // Attach click event handlers to +/- buttons
                     decreaseButton.addEventListener('click', () => {
