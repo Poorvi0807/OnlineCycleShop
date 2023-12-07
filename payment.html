@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/x-icon" href="https://www.specialized.com/_ui/addons/specializedstorefrontaddon/desktop/common/images/favicon.ico?v=1.1"/>
+    <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"  />
+    <script src="https://kit.fontawesome.com/f5664c1180.js"  crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&family=Roboto+Condensed:wght@400;700&family=Wix+Madefor+Text:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/payment.css">
+
+</head>
+<body id="body">
+    <div id="navbar">
+      <!-- nav -->
+  <nav id="nav">
+          <div id="home" onclick="home()">
+              <img src="./logos/home-logo.png" alt="home">
+          </div>
+          </div>
+  </nav>
+  </div>
+      <div id="header"></div>
+<div class="container">
+
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" id='name' placeholder="john deo" required>
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" id="email" placeholder="example@example.com" required>
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" id="address" placeholder="room - street - locality" required>
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" id="city" placeholder="mumbai" required>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" id="state" placeholder="india" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code :</span>
+                        <input type="text" id="zip" placeholder="123 456" required>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <div style="display:flex;justify-content: space-between;"><h3 class="title">payment</h3><h3 class="title" id="price"></h3></div>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="images/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" id="cardName" placeholder="mr. john deo" required>
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" id="cardNum" placeholder="1111-2222-3333-4444" required>
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" id="expMon" placeholder="january" required>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" id="expYr" placeholder="2023" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" id="cvv" placeholder="123" required>
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+<div id="btn">
+        <input type="submit" id="btn" value="proceed to checkout" class="submit-btn">
+    </div>
+    </form>
+
+</div>    
+   
+</body>
+<script src="payment.js"></script>
+</html>
