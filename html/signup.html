@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup</title>
+    <link rel="stylesheet" href="../style/signup.css" />
+    <link rel="stylesheet" href="../style/navBar.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+  </head>
+  <body>
+    <div id="navbar-container">
+      <div class="navbar">
+        <div class="logo-menu navlogo" id="logo-menu">
+          <nav>
+            <img src="../Images/logo.png" class="navlogo" alt="logo" />
+            <ul>
+              <li><a href="catalogue.html">Catalog</a></li>
+              <li><a href="wishlist.html">Wishlist</a></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="search-bar">
+          <div id="nav_search_userpro">
+            <!-- <input type="search" placeholder="Search" id="search"> -->
+            <input id="search-input" type="search" placeholder="Search..." />
+            <ul id="search-results"></ul>
+            <button><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+
+        <div class="user-profile">
+          <div id="loginOption" class="login-option">Login</div>
+          <img
+            src="../Images/user.png"
+            class="user-pic auth-user-pic"
+            id="userPic"
+          />
+          <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+              <div class="user-info">
+                <img src="../Images/user.png" />
+                <h3></h3>
+              </div>
+              <hr />
+
+               <a href="cart.html" class="sub-menu-link">
+                <img src="../Images/cart.png" />
+                <p>Cart</p>
+                <span> > </span>
+              </a>
+              <a href="catalogue.html" class="sub-menu-link catalogue-link">
+                <img src="../Images/catalogue.png" />
+                <p>Catalogue</p>
+                <span> > </span>
+              </a>
+              <a href="#" class="sub-menu-link">
+                <img src="../Images/setting.png" />
+                <p>Settings</p>
+                <span> > </span>
+              </a>
+              <a href="wishlist.html" class="sub-menu-link">
+                <img src="../Images/whishlist.png" />
+                <p>Wishlist</p>
+                <span> > </span>
+              </a>
+              <a href="signin.html" class="sub-menu-link" id="logoutButton">
+                <img src="../Images/logout.png" />
+                <p>Logout</p>
+                <span> > </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- overlay loading container start -->
+
+    <div id="nav-logo-overlay-container">
+      <div class="nav-logo-overlay">
+        <img src="../Images/Loading gif.gif" alt="Loading..." />
+      </div>
+    </div>
+
+     <!-- overlay loading container ends  -->
+     <!--nav ends-->
+
+
+
+
+
+
+<div id="signup-container">
+
+    
+    <form action="" id="signup-form" method="post">
+      
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="password-toggle">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <span id="password-toggle">Show</span>
+      </div>
+      <!-- Password strength meter -->
+      <div id="password-strength" class="password-strength">
+        <div class="meter"></div>
+        <div class="text"></div>
+      </div>
+
+      <div>
+        <label for="confirm-password">Confirm Password: </label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          required,
+        />
+        <span id="password-error" class="error"></span>
+      </div>
+
+      <div>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required />
+      </div>
+      <div>
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required />
+      </div>
+      <div>
+        <label for="email-offers">
+          <input type="checkbox" id="email-offers" name="email-offers" />
+          <span class="checkbox-label"
+            >Sign Me Up To Receive Email Offers And Updates</span
+          >
+        </label>
+      </div>
+
+      <div>
+        <label for="terms-conditions">
+          <input
+            type="checkbox"
+            id="terms-conditions"
+            name="terms-conditions"
+            required
+          />
+          <span class="checkbox-label"
+            >I Accept The Specialized Terms &amp; Conditions</span
+          >
+        </label>
+      </div>
+      <div id="terms-conditions-error" class="error-message"></div>
+
+      <div>
+        <label for="terms-of-use">
+          <input
+            type="checkbox"
+            id="terms-of-use"
+            name="terms-of-use"
+            required
+          />
+          <span class="checkbox-label"
+            >I Accept The Specialized Terms Of Use</span
+          >
+        </label>
+      </div>
+
+      <div>
+        <p>
+          I acknowledge Specialized will use my information in accordance with
+          its
+          <a
+            href="https://www.specialized.com/us/en/privacy-policy"
+            target="_blank"
+            >Privacy Policy</a
+          >.
+        </p>
+      </div>
+
+      <div>
+        <button type="submit" id="signup-button">Create Account</button>
+      </div>
+
+      <p id="login">
+        Already have an account? <a href="signin.html">Login</a>
+      </p>
+    </form>
+    <!--------------------------------------------------------------- signin succesfull redirection overlay end--------------------------------------------------------------------->
+
+    <div
+      class="signup-successful-overlay"
+      id="signup-successful-overlay"
+      style="display: none"
+    >
+      <div class="signup-successful-overlay-content">
+        <h3>Account Created Successfully</h3>
+        <div class="loading-gif">
+          <img src="../Images/Loading gif.gif" alt="Loading" />
+          <p>Redirecting to Login Page...</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!--------------------------------------------------------------- signin succesfull redirection overlay end--------------------------------------------------------------------->
+    <div id="footer-container">
+    <div id="footer">
+        <div class="footer_top">
+            <div class="Social_media">
+                <div class="logo">
+                    <img src="../Images/home-logo.png" alt="">
+                </div>
+                <div>
+                    <a href="#"><img src="../Images/icons8-youtube.svg" alt=""></a>
+                    <a href="#"><img src="../Images/icons8-facebook.svg" alt=""></a>
+                    <a href="#"><img src="../Images/Linkedin-logo.png" alt=""></a>
+                    <a href="#"><img src="../Images/icons8-instagram.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="about">
+                <div>
+                    <h4>MOUNTAIN</h4>
+                    <a href="#">Cross Country</a>
+                    <a href="#">Downhill</a>
+                    <a href="#">Dirt Jump</a>
+                    <a href="#">Frames</a>
+                </div>
+                <div>
+                    <h4>ROAD</h4>
+                    <a href="#">Performance</a>
+                    <a href="#">Gravel</a>
+                    <a href="#">Cyclocross</a>
+                    <a href="#">Triathlon</a>
+                </div>
+                <div>
+                    <h4>ACTIVE</h4>
+                    <a href="#">Fitness</a>
+                    <a href="#">Transport</a>
+                    <a href="#">Comfort</a>
+                </div>
+                <div>
+                    <h4>ELECTRIC</h4>
+                    <a href="#">Road</a>
+                    <a href="#">Mountain</a>
+                    <a href="#">Active</a>
+                </div>
+                <div>
+                    <h4>KIDS</h4>
+                    <a href="#">Toddler</a>
+                    <a href="#">Little kids</a>
+                    <a href="#">Big kids</a>
+                </div>
+                <div>
+                    <h4>CUSTOMERS</h4>
+                    <a href="#">About us</a>
+                    <a href="#">Delivery</a>
+                    <a href="#">Payment</a>
+                    <a href="#">Contacts</a>
+                </div>
+                <div>
+                    <h4>SUPPORT</h4>
+                    <a href="#">Support center</a>
+                    <a href="#">Warranty</a>
+                    <a href="#">Bike registration</a>
+                    <a href="#">Shipping &amp; Delivery</a>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h4>NEWSLETTER</h4>
+                <div>
+                    <input type="text" class="news_join" placeholder="Join Our Newsletter">
+                    <button>JOIN</button>
+                </div>
+                <p>By submitting your email address you agree to the <span><a href="#" id="terms_con">Terms &amp; Conditions</a></span></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                <span class="animated-copyright"
+                    style="color: #eb001b; font-size: 14px; line-height: 1;">&copy;</span>&nbsp;
+                1997 - 2022. Specialized Bicycle Components, Inc. All Rights Reserved
+            </p>
+        </div>
+    </div>
+</div>
+  </body>
+</html>
+
+<script type="module" src="../scripts/signup.js"></script>
+
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+<script type="module" src="../scripts/navBar.js"></script>
+

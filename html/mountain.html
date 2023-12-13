@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain</title>
+    <link rel="stylesheet" href="../style/navBar.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <!-- <link rel="stylesheet" href="/footer.css" />
+    <link rel="stylesheet" href="/signin/navbar.css" /> -->
+
+    <link rel="stylesheet" href="./mountain.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+</head>
+
+<body>
+    <!--nav-->
+    
+    
+    <div id="navbar-container">
+        <div class="navbar">
+          <div class="logo-menu navlogo" id="logo-menu">
+            <nav>
+              <img src="../Images/logo.png" class="navlogo" alt="logo" />
+              <ul>
+                <li><a href="./catalogue.html">Catalog</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </nav>
+          </div>
+  
+          <div class="search-bar">
+            <div id="nav_search_userpro">
+              <!-- <input type="search" placeholder="Search" id="search"> -->
+              <input id="search-input" type="search" placeholder="Search..." />
+              <ul id="search-results"></ul>
+              <button><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+  
+          <div class="user-profile">
+            <div id="loginOption" class="login-option">Login</div>
+            <img
+              src="../Images/user.png"
+              class="user-pic auth-user-pic"
+              id="userPic"
+            />
+            <div class="sub-menu-wrap" id="subMenu">
+              <div class="sub-menu">
+                <div class="user-info">
+                  <img src="../Images/user.png" />
+                  <h3></h3>
+                </div>
+                <hr />
+  
+                 <a href="cart.html" class="sub-menu-link">
+                  <img src="../Images/cart.png" />
+                  <p>Cart</p>
+                  <span> > </span>
+                </a>
+                <a href="catalogue.html" class="sub-menu-link catalogue-link">
+                  <img src="../Images/catalogue.png" />
+                  <p>Catalogue</p>
+                  <span> > </span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                  <img src="../Images/setting.png" />
+                  <p>Settings</p>
+                  <span> > </span>
+                </a>
+                <a href="wishlist.html" class="sub-menu-link">
+                  <img src="../Images/whishlist.png" />
+                  <p>Wishlist</p>
+                  <span> > </span>
+                </a>
+                <a href="signin.html" class="sub-menu-link" id="logoutButton">
+                  <img src="../Images/logout.png" />
+                  <p>Logout</p>
+                  <span> > </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+<!-- <div class="mmain">
+    <div class="main-nav">
+        <div class="logo-nav">
+            <img src="  /header-images/logo.png" alt="">
+        </div>
+        <div class="mq">
+            <H5 id="mountain-btn">MOUNTAIN</H5>
+        </div>
+        <div class="mq">
+            <H5 id="road-btn">ROAD</H5>
+        </div>
+        <div class="mq">
+            <H5 id="active-btn">ACTIVE</H5>
+        </div>
+        <div class="mq">
+            <H5 id="electric-btn">ELECTRIC</H5>
+        </div>
+        <div class="mq">
+            <H5 id="kids-btn">KIDS</H5>
+        </div>
+        <div id="search-div">
+            <img src="  /header-images/search.png" alt="">
+            <input placeholder="Search" type="text">
+        </div>
+        <div class="mq2">
+            <H5>CONTACT</H5>
+        </div>
+        <div class="mq3">
+            <img class="misc-img" src="  /header-images/heart.png" alt="">
+        </div>
+        <div>
+            <img id="cart_btn_head" class="misc-img" src="  /header-images/cart.png" alt="">
+        </div>
+        <div>
+            <img  class="misc-img" src="/header-images/user.png" alt="">
+        </div>
+    </div>
+    <hr class="hrr">
+    <div class="main-nav-2">
+        <div>
+            <h5>About us</h5>
+        </div>
+        <div>
+            <h5>Delivery</h5>
+        </div>
+        <div>
+            <h5>Payment</h5>
+        </div>
+        <div>
+            <h5>Contact</h5>
+        </div>
+    </div>
+</div> -->
+
+    
+    
+
+
+     <!-- Main Content -->
+     <div id="main">
+        <div id="sorting">
+            <h4>SORT BY PRICE:</h4>
+            <select id="sort">
+                <option value="low">Low To High</option>
+                <option value="high">High To Low</option>
+            </select>
+        </div>
+        <div id="maindiv">
+            <div id="filterdiv">
+                <h1>Mountain</h1>
+                <!--FILTERS header  -->
+                <div class="filter-header">
+                    <i class="fas fa-filter"></i>
+                    <h3>Filters</h3>
+                </div>
+                <!-- Category filter -->
+                <div class="filter-option">
+                    <label for="category">Category:</label>
+                    <select id="category">
+                        <option value="">All</option>
+                        <option value="Mountain">Mountain</option>
+                        <option value="Road">Road</option>
+                        <option value="Active">Active</option>
+                        <option value="Electric">Electric</option>
+                        <option value="Kid">Kid</option>
+                    </select>
+                </div>
+            
+                <!-- Color filter -->
+                <div class="filter-option">
+                    <label for="color">Color:</label>
+                    <select id="color">
+                        <option value="">All</option>
+                        <option value="black">Black</option>
+                        <option value="red">Red</option>
+                        <option value="black">Orange</option>
+                        <option value="red">Blue</option>
+                        <option value="black">Green</option>
+                        <option value="red">Purple</option>
+                    </select>
+                </div>
+               
+                <!-- Wheel Size filter -->
+<div class="filter-option">
+    <label for="wheel">Wheel Size:</label>
+    <select id="wheel">
+        <option value="">All</option>
+        <option value="s2">S</option>aha h
+                    <option value="s2">S1</option>
+                    <option value="s2">S2</option>
+                    <option value="s3">S3</option>
+                    <option value="s4">S4</option>
+                    <option value="s2">XS</option>
+                    <option value="s2">XL</option>
+                    <option value="s2">XXL</option>
+                    <option value="s2">XXS</option>
+    </select>
+</div>
+
+<!-- Model Year filter -->
+<div class="filter-option">
+    <label for="year">Model Year:</label>
+    <select id="year">
+        <option value="">All</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+    </select>
+</div>
+            </div>
+                
+            <div id="products">
+
+
+            </div>
+
+        </div>
+
+        <div id="pagination1"></div>
+    </div>
+
+
+<!-- footer -->
+
+<footer id="footer">
+    <div id="footer-container">
+<div id="footer">
+   <div class="footer_top">
+       <div class="Social_media">
+           <div class="logo">
+               <img src="../Images/home-logo.png" alt="">
+           </div>
+           <div>
+               <a href="#"><img src="../Images/icons8-youtube.svg" alt=""></a>
+               <a href="#"><img src="../Images/icons8-facebook.svg" alt=""></a>
+               <a href="#"><img src="../Images/Linkedin-logo.png" alt=""></a>
+               <a href="#"><img src="../Images/icons8-instagram.svg" alt=""></a>
+           </div>
+       </div>
+       <div class="about">
+           <div>
+               <h4>MOUNTAIN</h4>
+               <a href="#">Cross Country</a>
+               <a href="#">Downhill</a>
+               <a href="#">Dirt Jump</a>
+               <a href="#">Frames</a>
+           </div>
+           <div>
+               <h4>ROAD</h4>
+               <a href="#">Performance</a>
+               <a href="#">Gravel</a>
+               <a href="#">Cyclocross</a>
+               <a href="#">Triathlon</a>
+           </div>
+           <div>
+               <h4>ACTIVE</h4>
+               <a href="#">Fitness</a>
+               <a href="#">Transport</a>
+               <a href="#">Comfort</a>
+           </div>
+           <div>
+               <h4>ELECTRIC</h4>
+               <a href="#">Road</a>
+               <a href="#">Mountain</a>
+               <a href="#">Active</a>
+           </div>
+           <div>
+               <h4>KIDS</h4>
+               <a href="#">Toddler</a>
+               <a href="#">Little kids</a>
+               <a href="#">Big kids</a>
+           </div>
+           <div>
+               <h4>CUSTOMERS</h4>
+               <a href="#">About us</a>
+               <a href="#">Delivery</a>
+               <a href="#">Payment</a>
+               <a href="#">Contacts</a>
+           </div>
+           <div>
+               <h4>SUPPORT</h4>
+               <a href="#">Support center</a>
+               <a href="#">Warranty</a>
+               <a href="#">Bike registration</a>
+               <a href="#">Shipping &amp; Delivery</a>
+           </div>
+       </div>
+       <div class="newsletter">
+           <h4>NEWSLETTER</h4>
+           <div>
+               <input type="text" class="news_join" placeholder="Join Our Newsletter">
+               <button>JOIN</button>
+           </div>
+           <p>By submitting your email address you agree to the <span><a href="#" id="terms_con">Terms &amp; Conditions</a></span></p>
+       </div>
+   </div>
+   <div class="footer-bottom">
+       <p>
+           <span class="animated-copyright"
+               style="color: #eb001b; font-size: 14px; line-height: 1;">&copy;</span>&nbsp;
+           1997 - 2022. Specialized Bicycle Components, Inc. All Rights Reserved
+       </p>
+       <p class="animated-text" style="color: #c68409; overflow: hidden;">Created with <span style="color: red;">&hearts;</span> in <span style="color: #ebe2e3;">masai</span> <span style="color: goldenrod;">&#x1F60A;</span></p>
+   </div>
+</div>
+</div>
+
+</footer>
+</body>
+
+</html>
+
+<script src="https://kit.fontawesome.com/593dd93f4e.js" crossorigin="anonymous"></script>
+<script src="./mountain.js"></script>
