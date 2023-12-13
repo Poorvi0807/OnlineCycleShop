@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signin</title>
+    <link rel="stylesheet" href="/footer.css" />
+    <link rel="stylesheet" href="/signin/navbar.css" />
+    <link rel="stylesheet" href="/signin/sigin.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <!-- nav -->
+
+    <div id="navbar-container">
+        <div class="navbar">
+            <div class="logo-menu navlogo" id="logo-menu">
+                <nav>
+                    <img src="/Images/home-logo.png" class="navlogo" alt="logo" />
+                    <ul>
+                        <li><a href='#'>Catalog</a></li>
+                        <li><a href='#'>Wishlist</a></li>
+                        <li><a href='#'>Cart</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="search-bar">
+                <div id="nav_search_userpro">
+                    <input id="search-input" type="search" placeholder="Search..." />
+                    <ul id="search-results"></ul>
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            </div>
+            
+    </div>
+
+
+    <!--signin-->
+    <div id="signin-container">
+
+        <form action="/signin/signin.html" id="signin-form" method="post">
+            <h2>Sign In to your Account</h2>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div class="password-toggle">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required />
+                <span id="password-toggle">Show</span>
+            </div>
+
+            <div class="remember-forgot">
+                <div>
+                    <label for="remember-me">
+            <input type="checkbox" id="rememberme" name="rememberme" />
+            <span class="checkbox-label">Remember Me</span>
+          </label>
+                </div>
+
+                <div>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+            </div>
+
+            <p>
+                I accept the Specialized Terms of Use and acknowledge Specialized will use my information in accordance with its
+                <a href="https://www.specialized.com/us/en/privacy-policy" target="_blank">Privacy Policy</a>
+      </p>
+
+      <div>
+        <button type="submit" id="button">Sign In</button>
+      </div>
+      <p id="signup">
+        <a href=''>Create Account</a>
+            </p>
+        </form>
+
+        <!--signin -->
+
+        
+    </div>
+ <!-- footer -->
+
+ <footer id="footer">
+    <div id="footer-container">
+        <div id="footer">
+            <div class="footer_top">
+                <div class="Social_media">
+                    <div class="logo">
+                        <img src="/Images/home-logo.png" alt="">
+                    </div>
+                    <div>
+                        <a href="#"><img src="/Images/youtube.svg" alt=""></a>
+                        <a href="#"><img src="/Images/facebook.svg" alt=""></a>
+                        <a href="#"><img src="/Images/Linkedin.png" alt=""></a>
+                        <a href="#"><img src="/Images/instagram.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="about">
+                    <div>
+                        <h4>MOUNTAIN</h4>
+                        <a href="#">Cross Country</a>
+                        <a href="#">Downhill</a>
+                        <a href="#">Dirt Jump</a>
+                        <a href="#">Frames</a>
+                    </div>
+                    <div>
+                        <h4>ROAD</h4>
+                        <a href="#">Performance</a>
+                        <a href="#">Gravel</a>
+                        <a href="#">Cyclocross</a>
+                        <a href="#">Triathlon</a>
+                    </div>
+                    <div>
+                        <h4>ACTIVE</h4>
+                        <a href="#">Fitness</a>
+                        <a href="#">Transport</a>
+                        <a href="#">Comfort</a>
+                    </div>
+                    <div>
+                        <h4>ELECTRIC</h4>
+                        <a href="#">Road</a>
+                        <a href="#">Mountain</a>
+                        <a href="#">Active</a>
+                    </div>
+                    <div>
+                        <h4>KIDS</h4>
+                        <a href="#">Toddler</a>
+                        <a href="#">Little kids</a>
+                        <a href="#">Big kids</a>
+                    </div>
+                    <div>
+                        <h4>CUSTOMERS</h4>
+                        <a href="#">About us</a>
+                        <a href="#">Delivery</a>
+                        <a href="#">Payment</a>
+                        <a href="#">Contacts</a>
+                    </div>
+                    <div>
+                        <h4>SUPPORT</h4>
+                        <a href="#">Support center</a>
+                        <a href="#">Warranty</a>
+                        <a href="#">Bike registration</a>
+                        <a href="#">Shipping &amp; Delivery</a>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h4>NEWSLETTER</h4>
+                    <div>
+                        <input type="text" class="news_join" placeholder="Join Our Newsletter">
+                        <button>JOIN</button>
+                    </div>
+                    <p>By submitting your email address you agree to the <span><a href="#" id="terms_con">Terms &amp; Conditions</a></span></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    <span class="animated-copyright" style="color: #eb001b; font-size: 14px; line-height: 1;">&copy;</span>&nbsp; 1997 - 2022. Specialized Bicycle Components, Inc. All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+</body>
+
+</html>
+<script src="https://kit.fontawesome.com/593dd93f4e.js" crossorigin="anonymous"></script>
+

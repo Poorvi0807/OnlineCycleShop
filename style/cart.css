@@ -1,0 +1,307 @@
+/* nav____________________ */
+
+/* ______________nabar__________ */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #464445;
+}
+
+main {
+  /* background-color: aqua; */
+  color: #1c1c1c;
+  font-size: 15px;
+}
+
+#mainDiv input {
+  width: 20%;
+  text-align: center;
+  font-weight: 800;
+  color: #c67809;
+}
+
+#mainDiv div {
+  margin: auto;
+  margin-left: 10px;
+  /*  */
+  /* border: 1px solid red; */
+}
+
+#mainDiv {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  margin-bottom: 15px;
+  border-radius: 7px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#imgDiv {
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#mainDiv > div:first-child img:first-child {
+  width: 40%;
+  border-radius: 5px;
+}
+
+#mainDiv .qtyDiv {
+  display: flex;
+}
+
+#delcart {
+  background-color: transparent;
+  border: none;
+}
+
+#mainDiv div:nth-child(2) {
+  text-align: center;
+  width: 85%;
+
+  /* border: 2px solid green; */
+}
+
+#mainDiv div:nth-child(4) {
+  /* margin-left: 0px;     */
+  width: 30%;
+  padding: 0% 1%;
+  /* margin: auto; */
+}
+#orderitem {
+  width: 65%;
+  margin: auto;
+  /* border: 1px solid black; */
+  padding: 20px;
+  font-weight: lighter;
+  color: #1c1c1c;
+}
+#orderitem > p {
+  color: aliceblue;
+}
+
+#orderitem h2 {
+  letter-spacing: 2px;
+  font-size: 25px;
+  color: rgba(240, 248, 255, 0.825);
+}
+
+#orderDetails {
+  display: flex;
+  width: 65%;
+  border: 1px solid black;
+  padding: 15px 10px;
+  color: #1c1c1c;
+  font-weight: 550;
+  background-color: aliceblue;
+  border-radius: 7px;
+}
+#orderDetails div i {
+  margin-left: 30%;
+}
+
+#detailsAmount {
+  display: flex;
+  margin: auto;
+}
+#orderDetails div {
+  margin: 5px;
+}
+/* #orderDetails {
+    margin-left: 30%;
+    
+} */
+#amount {
+  border: 1px solid black;
+  display: flex;
+  width: 34%;
+  padding: 10px;
+  margin-left: 10px;
+  background-color: aliceblue;
+  border-radius: 7px;
+}
+#amount button {
+  height: 30%;
+  border: none;
+  background-color: #1c1c1c;
+  color: aliceblue;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+#amount button:hover {
+background-color: #eb030b;
+}
+#displayMRP,
+#displayMRPCart {
+  text-decoration-line: line-through;
+  font-size: 15px;
+  font-weight: 550;
+  color: #1c1c1ca4;
+}
+#displayMRP {
+  display: none;
+}
+#detail + div button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #1c1c1ce1;
+}
+#detail + div button:first-child {
+  font-size: 20px;
+}
+#detail {
+  align-items: center;
+  font-weight: normal;
+  padding: 8px;
+  color: #1c1c1cd4;
+  text-align: center;
+}
+
+#finalAmt {
+  color: #1c1c1cda;
+  font-weight: 550;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+#dellogo {
+  cursor: pointer;
+  width: 20px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+}
+
+#dellogo:hover {
+  color: #c67809;
+}
+
+
+@media screen and (min-width: 300px) and  (max-width: 800px) {
+  main {
+    font-size: 13px;
+  }
+
+  #mainDiv {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-bottom: 10%;
+    
+  }
+#imgDiv {
+ 
+  width: 100%;
+  margin: auto;
+}
+#imgDiv img{
+  margin-top: 20px;
+}
+#detail {
+  border-top: 1px solid #bdbaba;
+ 
+ 
+  padding: 8px;
+  color: #1c1c1cd4;
+  text-align: center;
+}
+.qtyDiv {
+  justify-content: center;
+}
+#finalPrice {
+  width: 100%;
+  text-align: center;
+  margin-left: 100%;
+  font-weight: 900;
+  
+}
+#delcart {
+  margin-left: 80px;
+}
+#detailsAmount {
+  flex-direction: column-reverse;
+}
+#detailsAmount #amount {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5%;
+}
+#detailsAmount #orderDetails {
+  width: 90%;
+  margin: auto;
+}
+
+}
+@media screen and (min-width: 700px) and  (max-width: 1200px) {
+  main {
+    font-size: 13px;
+  }
+
+  #mainDiv {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-bottom: 10%;
+    
+  }
+#imgDiv {
+ 
+  width: 100%;
+  margin: auto;
+}
+#imgDiv img{
+  margin-top: 20px;
+}
+#detail {
+  border-top: 1px solid #bdbaba;
+  font-weight:400;
+  padding: 8px;
+  color: #1c1c1cd4;
+  text-align: center;
+}
+.qtyDiv {
+  justify-content: flex-end;
+
+  
+}
+#finalPrice {
+  width: 100%;
+  text-align: center;
+  margin-left: 95%;
+  font-weight: 900;
+ 
+}
+#delcart {
+ margin-left: 190px;
+}
+#detailsAmount {
+  flex-direction: column-reverse;
+}
+#detailsAmount #amount {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5%;
+}
+#detailsAmount #orderDetails {
+  width: 90%;
+  margin: auto;
+}
+
+}

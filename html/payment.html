@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://www.specialized.com/_ui/addons/specializedstorefrontaddon/desktop/common/images/favicon.ico?v=1.1"/>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/f5664c1180.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&family=Roboto+Condensed:wght@400;700&family=Wix+Madefor+Text:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style/payment.css" />
+<link rel="stylesheet" href="../style/navBar.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+
+</head>
+<body>
+  
+<!--nav-->
+    <div id="navbar-container">
+      <div class="navbar">
+        <div class="logo-menu navlogo" id="logo-menu">
+          <nav>
+            <img src="../Images/logo.png" class="navlogo" alt="logo" />
+            <ul>
+              <li><a href="catalogue.html">Catalog</a></li>
+              <li><a href="wishlist.html">Wishlist</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="search-bar">
+          <div id="nav_search_userpro">
+            <!-- <input type="search" placeholder="Search" id="search"> -->
+            <input id="search-input" type="search" placeholder="Search..." />
+            <ul id="search-results"></ul>
+            <button><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+
+        <div class="user-profile">
+          <div id="loginOption" class="login-option">Login</div>
+          <img
+            src="../Images/user.png"
+            class="user-pic auth-user-pic"
+            id="userPic"
+          />
+          <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+              <div class="user-info">
+                <img src="../Images/user.png" />
+                <h3></h3>
+              </div>
+              <hr />
+
+              <a href="cart.html" class="sub-menu-link">
+                <img src="../Images/cart.png" />
+                <p>Cart</p>
+                <span> > </span>
+              </a>
+              <a href="catalogue.html" class="sub-menu-link catalogue-link">
+                <img src="../Images/catalogue.png" />
+                <p>Catalogue</p>
+                <span> > </span>
+              </a>
+              <a href="#" class="sub-menu-link">
+                <img src="../Images/setting.png" />
+                <p>Settings</p>
+                <span> > </span>
+              </a>
+              <a href="wishlist.html" class="sub-menu-link">
+                <img src="../Images/whishlist.png" />
+                <p>Wishlist</p>
+                <span> > </span>
+              </a>
+              <a href="signin.html" class="sub-menu-link" id="logoutButton">
+                <img src="../Images/logout.png" />
+                <p>Logout</p>
+                <span> > </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- overlay loading container start -->
+
+    <div id="nav-logo-overlay-container">
+      <div class="nav-logo-overlay">
+        <img src="../Images/Loading gif.gif" alt="Loading..." />
+      </div>
+    </div>
+
+     <!-- overlay loading container ends  -->
+     <!--nav ends-->
+
+<!--main section-->
+
+    <div id="header"></div>
+    <div class="container">
+
+        <form id="paymentForm" action="">
+
+           <div class="row">
+        <div class="col">
+          <h3 class="title">billing address</h3>
+          <div class="inputBox">
+            <span>full name :</span>
+            <input type="text" id="name" placeholder="Name" required>
+          </div>
+          <div class="inputBox">
+            <span>email :</span>
+            <input type="email" id="email" placeholder="Email id" required>
+          </div>
+          <div class="inputBox">
+            <span>address :</span>
+            <input type="text" id="address" placeholder="Customer address" required>
+          </div>
+          <div class="inputBox">
+            <span>city :</span>
+            <input type="text" id="city" placeholder="City Name" required>
+          </div>
+          <div class="flex">
+            <div class="inputBox">
+              <span>state :</span>
+              <input type="text" id="state" placeholder="State Name" required>
+            </div>
+            <div class="inputBox">
+              <span>Pin code :</span>
+              <input type="text" id="zip" placeholder="6 digit Pincode" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <!-- Payment Section -->
+          <div style="display:flex;justify-content: space-between;">
+            <h3 class="title">payment details</h3>
+            <h3 class="title" id="price"></h3>
+          </div>
+          <div class="inputBox">
+            <span>card accepted :</span>
+            <img src="../Images/card_img.png" alt="">
+          </div>
+          <div class="inputBox">
+            <span>name on card :</span>
+            <input type="text" id="cardName" placeholder="Name on card" required>
+          </div>
+          <div class="inputBox">
+            <span>debit card number :</span>
+            <input type="text" id="cardNum" placeholder="Card Number" required>
+          </div>
+          <div class="inputBox">
+            <span>exp month :</span>
+            <input type="text" id="expMon" placeholder="month" required>
+          </div>
+          <div class="flex">
+            <div class="inputBox">
+              <span>exp year :</span>
+              <input type="number" id="expYr" placeholder="year" required>
+            </div>
+            <div class="inputBox">
+              <span>CVV :</span>
+              <input type="text" id="cvv" placeholder="CVV" required>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="errorContainer"></div>
+      <div class="submit-btn-container">
+        <input type="submit" id="submitButton" value="Send OTP" class="submit-btn">
+      </div>
+    </form>
+  </div>
+
+        </form>
+    </div> 
+    <div id="messageOverlay" class="overlay">
+  <div class="overlay-content">
+    <div class="loading-box">
+      <img src="../Images/Loading gif.gif" alt="Loading" class="loading-gif">
+      <p class="loading-message">Sending OTP...</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="otpOverlay" class="overlay">
+  <div class="otp-container">
+    <h2>Enter OTP</h2>
+    <div class="otp-input">
+      <input type="text" id="otpInput" placeholder="Enter OTP">
+    </div>
+    <div id="otpError" class="error-message"></div>
+    <button id="verifyButton">Pay Now</button>
+  </div>
+</div>
+</div>
+<div id="otpVerifiedOverlay">
+  <div id="otpVerifiedOverlay-content">
+    <div class="loading-box">
+      <img src="../Images/Succesfull.gif" alt="Loading" class="verified-gif">
+      <p id="otpVerifiedOverlay-message">OTP Verified Successfully</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div id="thankYouScreen" class="overlay">
+  <div class="thank-you-content">
+    <h2>Thank You for Your Order!</h2>
+    <p>Your Order ID is: <span id="orderId"></span></p>
+    <p>We have received your payment and will process your order soon.</p>
+    <button id="homeButton" onclick="home()">Go to Homepage</button>
+   <p id="redirectText">Redirecting to home page in <span id="countdown">5</span> seconds</p>
+
+
+  </div>
+</div>
+
+ <!-- footer -->
+    	<footer id="footer">
+         <div id="footer-container">
+    <div id="footer">
+        <div class="footer_top">
+            <div class="Social_media">
+                <div class="logo">
+                    <img src="../Images/home-logo.png" alt="">
+                </div>
+                <div>
+                    <a href="#"><img src="../Images/icons8-youtube.svg" alt=""></a>
+                    <a href="#"><img src="../Images/icons8-facebook.svg" alt=""></a>
+                    <a href="#"><img src="../Images/Linkedin-logo.png" alt=""></a>
+                    <a href="#"><img src="../Images/icons8-instagram.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="about">
+                <div>
+                    <h4>MOUNTAIN</h4>
+                    <a href="#">Cross Country</a>
+                    <a href="#">Downhill</a>
+                    <a href="#">Dirt Jump</a>
+                    <a href="#">Frames</a>
+                </div>
+                <div>
+                    <h4>ROAD</h4>
+                    <a href="#">Performance</a>
+                    <a href="#">Gravel</a>
+                    <a href="#">Cyclocross</a>
+                    <a href="#">Triathlon</a>
+                </div>
+                <div>
+                    <h4>ACTIVE</h4>
+                    <a href="#">Fitness</a>
+                    <a href="#">Transport</a>
+                    <a href="#">Comfort</a>
+                </div>
+                <div>
+                    <h4>ELECTRIC</h4>
+                    <a href="#">Road</a>
+                    <a href="#">Mountain</a>
+                    <a href="#">Active</a>
+                </div>
+                <div>
+                    <h4>KIDS</h4>
+                    <a href="#">Toddler</a>
+                    <a href="#">Little kids</a>
+                    <a href="#">Big kids</a>
+                </div>
+                <div>
+                    <h4>CUSTOMERS</h4>
+                    <a href="#">About us</a>
+                    <a href="#">Delivery</a>
+                    <a href="#">Payment</a>
+                    <a href="#">Contacts</a>
+                </div>
+                <div>
+                    <h4>SUPPORT</h4>
+                    <a href="#">Support center</a>
+                    <a href="#">Warranty</a>
+                    <a href="#">Bike registration</a>
+                    <a href="#">Shipping &amp; Delivery</a>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h4>NEWSLETTER</h4>
+                <div>
+                    <input type="text" class="news_join" placeholder="Join Our Newsletter">
+                    <button>JOIN</button>
+                </div>
+                <p>By submitting your email address you agree to the <span><a href="#" id="terms_con">Terms &amp; Conditions</a></span></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                <span class="animated-copyright"
+                    style="color: #eb001b; font-size: 14px; line-height: 1;">&copy;</span>&nbsp;
+                1997 - 2022. Specialized Bicycle Components, Inc. All Rights Reserved
+            </p>
+            <p class="animated-text" style="color: #c68409; overflow: hidden;">Created with <span style="color: red;">&hearts;</span> in <span style="color: #ebe2e3;">masai</span> <span style="color: goldenrod;">&#x1F60A;</span></p>
+        </div>
+    </div>
+</div>
+
+    </footer>
+
+</body>
+</html>
+<script src="../scripts/payment.js"></script>
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+<script type="module" src="../scripts/navBar.js"></script>
+
+
+
+
+    
+
+    <script src="https://kit.fontawesome.com/593dd93f4e.js" crossorigin="anonymous"></script>
+
+
+    <script src="https://kit.fontawesome.com/593dd93f4e.js" crossorigin="anonymous"></script>
+
+

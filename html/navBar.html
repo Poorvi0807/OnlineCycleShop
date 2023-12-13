@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="../style/navBar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Added Debounce -->
+  </head>
+  <body>
+    <div id="navbar-container">
+      <div class="navbar">
+        <div class="logo-menu navlogo" id="logo-menu">
+          <nav>
+            <img src="../Images/logo.png" class="navlogo" alt="logo" />
+            <ul>
+              <li><a href="./catalogue.html">Catalog</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="search-bar">
+          <div id="nav_search_userpro">
+            <!-- <input type="search" placeholder="Search" id="search"> -->
+            <input id="search-input" type="search" placeholder="Search..." />
+            <ul id="search-results"></ul>
+            <button><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+
+        <div class="user-profile">
+          <div id="loginOption" class="login-option">Login</div>
+          <img
+            src="./Images/user.png"
+            class="user-pic auth-user-pic"
+            id="userPic"
+          />
+          <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+              <div class="user-info">
+                <img src="./Images/user.png" />
+                <h3></h3>
+              </div>
+              <hr />
+
+              <a href="cart.html" class="sub-menu-link">
+                <img src="./Images/profile.png" />
+                <p>Cart</p>
+                <span> > </span>
+              </a>
+              <a href="#" class="sub-menu-link catalogue-link">
+                <img src="./Images/profile.png" />
+                <p>Catalogue</p>
+                <span> > </span>
+              </a>
+              <a href="#" class="sub-menu-link">
+                <img src="./Images/setting.png" />
+                <p>Settings</p>
+                <span> > </span>
+              </a>
+              <a href="#" class="sub-menu-link">
+                <img src="./Images/help.png" />
+                <p>Wishlist</p>
+                <span> > </span>
+              </a>
+              <a href="#" class="sub-menu-link" id="logoutButton">
+                <img src="./Images/logout.png" />
+                <p>Logout</p>
+                <span> > </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- overlay loading container start -->
+
+    <div id="nav-logo-overlay-container">
+      <div class="nav-logo-overlay">
+        <img src="/Images/Rolling-1s-200px.gif" alt="Loading..." />
+      </div>
+    </div>
+
+     <!-- overlay loading container ends  -->
+     <!--nav ends-->
+
+
+  </body>
+</html>
+
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+<script type="module" src="../scripts/navBar.js"></script>

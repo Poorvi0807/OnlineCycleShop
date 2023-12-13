@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/4db740c557.js"
+      crossorigin="anonymous"
+    ></script>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500&family=Raleway:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/homepage.css" />
+    <link rel="stylesheet" href="./style/navBar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="https://www.specialized.com/_ui/addons/specializedstorefrontaddon/desktop/common/images/favicon.ico?v=1.1"/>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/f5664c1180.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&family=Roboto+Condensed:wght@400;700&family=Wix+Madefor+Text:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style/footer.css">
+
+    <title>Homepage | Specialized.com</title>
+  </head>
+  <body>
+    <!--nav-->
+    <div id="navbar-container">
+      <div class="navbar">
+        <div class="logo-menu navlogo" id="logo-menu">
+          <nav>
+            <img src="./Images/logo.png" class="navlogo" alt="logo" />
+            <ul>
+              <li><a href="./html/catalogue.html">Catalog</a></li>
+              <li><a href="./html/wishlist.html">Wishlist</a></li>
+              <li><a href="./html/cart.html">Cart</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="search-bar">
+          <div id="nav_search_userpro">
+            <!-- <input type="search" placeholder="Search" id="search"> -->
+            <input id="search-input" type="search" placeholder="Search..." />
+            <ul id="search-results"></ul>
+            <button><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+
+        <div class="user-profile">
+          <div id="loginOption" class="login-option">Login</div>
+          <img
+            src="./Images/user.png"
+            class="user-pic auth-user-pic"
+            id="userPic"
+          />
+          <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+              <div class="user-info">
+                <img src="./Images/user.png" />
+                <h3></h3>
+              </div>
+              <hr />
+
+              <a href="./html/cart.html" class="sub-menu-link">
+                <img src="./Images/cart.png" />
+                <p>Cart</p>
+                <span> > </span>
+              </a>
+              <a href="catalogue.html" class="sub-menu-link catalogue-link">
+                <img src="./Images/catalogue.png" />
+                <p>Catalogue</p>
+                <span> > </span>
+              </a>
+              <a href="#" class="sub-menu-link">
+                <img src="./Images/setting.png" />
+                <p>Settings</p>
+                <span> > </span>
+              </a>
+              <a href="./html/wishlist.html" class="sub-menu-link">
+                <img src="./Images/whishlist.png" />
+                <p>Wishlist</p>
+                <span> > </span>
+              </a>
+              <a href="./html/signin.html" class="sub-menu-link" id="logoutButton">
+                <img src="./Images/logout.png" />
+                <p>Logout</p>
+                <span> > </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- overlay loading container start -->
+
+    <div id="nav-logo-overlay-container">
+      <div class="nav-logo-overlay">
+        <img src="./Images/Rolling-1s-200px.gif" alt="Loading..." />
+      </div>
+    </div>
+
+     <!-- overlay loading container ends  -->
+     <!--nav ends-->
+
+
+
+
+    <div id = "homepage-container">
+    <div id="body-start">
+      <p id="body-start1">THE POWER TO RIDE MORE TRAILS</p>
+      <p id="body-start2">It's not just a new bike, it's you, only faster</p>
+      <a href="./html/catalogue.html"
+        ><button class="button" id="body-start3">CATALOGUE</button></a
+      >
+    </div>
+    <div id="bs">
+      <div id="best-sellers-title">CHOOSE OUR BEST SELLERS</div>
+      <div id="best-sellers">
+        <div id="product">
+          <img
+            id="product-image"
+            src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS2tMVgO2rem-mQnEWIOqIK0tZA_JjdZvi7v0Yy5wkjcG7qe0Z73I3K_11M2dwPtEuGHdCLNZ1H3IJcZ9rH87j8E9kFN8SLpUFcbK7kTQaCwA8ZGJ29JbZU&usqp=CAE"
+            alt=""
+          />
+          <p id="product-name">Tarmac SL7 Comp -Shimano 105 Di2</p>
+          <p id="product-price">₹8,300.00</p>
+        </div>
+        <div id="product">
+          <img
+            id="product-image"
+            src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT1T9MxXjIX8ZKcy2B99HoiIfLuTWMqTGEwbzJf-VBeg7uibzLEmb3kdRGJr9uwQTTD7fKE9ygME9p-xRhOQ2ZwiohGHecFMDVqOMV2CNWks9JjgQXzw1nO&usqp=CAE"
+            alt=""
+          />
+          <p id="product-name">S-Works Epic EVO LTD</p>
+          <p id="product-price">₹19,000.00</p>
+        </div>
+        <div id="product">
+          <img
+            id="product-image"
+            src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ3quKp7b-jDllusgs_z_JtIfUPgN9RnscttV5WspF4v45ubXVEfGFTuhGrP2jT6uwxGQT0Bz5LBWInRKD6ku8qqyCGvM4cCfWK2WJOPpVA67lqSGxjh6WAfg&usqp=CAE"
+            alt=""
+          />
+          <p id="product-name">Enduro LTD</p>
+          <p id="product-price">₹10,500.00</p>
+        </div>
+      </div>
+      <a href="./html/catalogue.html"
+        ><button class="button" id="body-start3">CATALOGUE</button></a
+      >
+    </div>
+    <div id="bt">
+      <div id="brain-tech-title">BRAIN TECHNOLOGY</div>
+      <div id="brain-tech">
+        <p id="body-tech1">ROOTS OF THE BRAIN</p>
+        <p id="body-tech2">
+          In 2002 we introduced a shock with a mind of its own and
+          revolutionized bicycle suspension. Integral to the winningest full
+          suspension XC bikes ever. Brain technology has came a long way over
+          the past 2 decades. But the all-new brain is still in a class by
+          itself when it comes to instantly and automatically adjusting
+          suspension from firm to active to maximize efficiency and control.
+        </p>
+        <a href="https://www.w3schools.com"
+          ><button class="button" id="brain-tech3">KNOW MORE</button></a
+        >
+      </div>
+    </div>
+    <div id="bs">
+      <div id="best-sellers-title">BIKE DISCOUNTS OF THIS MONTH</div>
+      <div id="best-sellers">
+        <div id="product">
+          <img
+            id="product-image"
+            src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS_w2kPP95MS-v1Y770Il1ZmGa2jKz1voRXhaSfVgMFowtT78WzB4-T3e8_Ypym8BTcNB0Djt7VoKktSsDXuopGvTV1OuiHwuYd-OVRudfMtZ-qFD2oEX1LLw&usqp=CAE"
+            alt=""
+          />
+          <p id="product-name">S-Works Enduro</p>
+          <p id="product-price">
+            <span id="before">₹20,000.00</span
+            ><span id="after"> ₹15,800.00</span>
+          </p>
+        </div>
+        <div id="product">
+          <img
+            id="product-image"
+            src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSIyGQMjwTUtx00-J0A7Pd4rDQZzrbR8YU5ir0nFkYYG9lyy0YsMSdbYRv517ObzifG2wy0C6oRu59nmXyidkr0T5jdQkQsJTN2uqYawoSV&usqp=CAE"
+            alt=""
+          />
+          <p id="product-name">Enduro Comp</p>
+          <p id="product-price">
+            <span id="before">₹10,000.00</span
+            ><span id="after"> ₹7,200.00</span>
+          </p>
+        </div>
+        <div id="product">
+          <img
+            id="product-image"
+            src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTP6M7Lpe7NWjO3HqP1tKZ4OpXHoLEXlLsWDwbunTA_OwIhz5owiQe7BYNtGMQhFqEpUEulYYV4T6L8ciq5YmMsh_PtAW_BkQAXdX6VUrOjvgt_zOXp3DJspA&usqp=CAE"
+            alt=""
+          />
+          <p id="product-name">Enduro Expert</p>
+          <p id="product-price">
+            <span id="before">₹9,000.00</span> <span id="after">₹7,200.00</span>
+          </p>
+        </div>
+      </div>
+      <a href="./html/catalogue.html"
+        ><button class="button" id="body-start3">CATALOGUE</button></a
+      >
+    </div>
+    <div id="hide">
+      <div id="more">
+        <div id="best-sellers-title">KNOW MORE ABOUT US</div>
+      </div>
+      <div id="more1">
+        <div id="more1top">
+          <p id="head">SPECIALIZED, SINCE 1974</p>
+          <p id="para">
+            We are riders—that fact has guided our every decision since 1974.
+            When quality tires weren't around, we strove to make the best. When
+            people wanted to ride cruisers in the dirt, we made the first
+            production mountain bike. When roadies wanted to go faster, we
+            doubled-down on carbon and built our own wind tunnel. And when we
+            saw kids struggling to focus in school, we began supporting Outride
+            to help promote better health through cycling.
+          </p>
+        </div>
+      </div>
+      <div id="more2">
+        <div id="more2left">
+          <p id="head">BECAUSE MOUNTAIN BIKES NEED TRAILS</p>
+          <p id="para">
+            As quickly as the mountain bike arrived, so did the issue of trail
+            access. By 1987, bikes were getting the boot from public lands. That
+            year, we took part in a round table of advocacy groups, and within
+            six months, the International Mountain Bike Association (IMBA) was
+            born. In short order, we became trail access evangelists. We
+            sponsored the first industry-wide meeting on the subject, and some
+            of our employees went to sit on IMBA’s board. Without trail
+            advocates, there’d be no trails to protect. It’s as simple as that.
+          </p>
+        </div>
+        <div id="more2right">
+          <p id="head">OUTRIDE</p>
+          <p id="para">
+            OUTRIDE has set out to prove cycling benefits your brain! Through
+            our research, cycling programs, and grant giving activities, we
+            provide evidenced-based cycling interventions to improve social,
+            emotional, and cognitive health.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div id="footer-container">
+    <div id="footer">
+        <div class="footer_top">
+            <div class="Social_media">
+                <div class="logo">
+                    <img src="./Images/home-logo.png" alt="">
+                </div>
+                <div>
+                    <a href="#"><img src="./Images/icons8-youtube.svg" alt=""></a>
+                    <a href="#"><img src="./Images/icons8-facebook.svg" alt=""></a>
+                    <a href="#"><img src="./Images/Linkedin-logo.png" alt=""></a>
+                    <a href="#"><img src="./Images/icons8-instagram.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="about">
+                <div>
+                    <h4>MOUNTAIN</h4>
+                    <a href="#">Cross Country</a>
+                    <a href="#">Downhill</a>
+                    <a href="#">Dirt Jump</a>
+                    <a href="#">Frames</a>
+                </div>
+                <div>
+                    <h4>ROAD</h4>
+                    <a href="#">Performance</a>
+                    <a href="#">Gravel</a>
+                    <a href="#">Cyclocross</a>
+                    <a href="#">Triathlon</a>
+                </div>
+                <div>
+                    <h4>ACTIVE</h4>
+                    <a href="#">Fitness</a>
+                    <a href="#">Transport</a>
+                    <a href="#">Comfort</a>
+                </div>
+                <div>
+                    <h4>ELECTRIC</h4>
+                    <a href="#">Road</a>
+                    <a href="#">Mountain</a>
+                    <a href="#">Active</a>
+                </div>
+                <div>
+                    <h4>KIDS</h4>
+                    <a href="#">Toddler</a>
+                    <a href="#">Little kids</a>
+                    <a href="#">Big kids</a>
+                </div>
+                <div>
+                    <h4>CUSTOMERS</h4>
+                    <a href="#">About us</a>
+                    <a href="#">Delivery</a>
+                    <a href="#">Payment</a>
+                    <a href="#">Contacts</a>
+                </div>
+                <div>
+                    <h4>SUPPORT</h4>
+                    <a href="#">Support center</a>
+                    <a href="#">Warranty</a>
+                    <a href="#">Bike registration</a>
+                    <a href="#">Shipping &amp; Delivery</a>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h4>NEWSLETTER</h4>
+                <div>
+                    <input type="text" class="news_join" placeholder="Join Our Newsletter">
+                    <button>JOIN</button>
+                </div>
+                <p>By submitting your email address you agree to the <span><a href="#" id="terms_con">Terms &amp; Conditions</a></span></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                <span class="animated-copyright"
+                    style="color: #eb001b; font-size: 14px; line-height: 1;">&copy;</span>&nbsp;
+                1997 - 2022. Specialized Bicycle Components, Inc. All Rights Reserved
+            </p>
+            <p class="animated-text" style="color: #c68409; ">Created with <span style="color: red;">&hearts;</span> in <span style="color: #ebe2e3;">masai</span> <span style="color: goldenrod;">&#x1F60A;</span></p>
+        </div>
+    </div>
+</div>
+
+  </body>
+</html>
+
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+<script type="module" src="./scripts/indexNav.js"></script>
+
+
+
+
+    
+
+    <script src="https://kit.fontawesome.com/593dd93f4e.js" crossorigin="anonymous"></script>
+
+
+    <script src="https://kit.fontawesome.com/593dd93f4e.js" crossorigin="anonymous"></script>

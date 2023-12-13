@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CATALOGUE SPECIALIZED</title>
+    <link rel="stylesheet" href="/style/styles.css" />
+    <link rel="stylesheet" href="/signin/navbar.css" />
+
+    <link rel="stylesheet" href="/footer.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<style>
+    *{
+    font-family: sans-serif;
+}
+@media only screen and (max-width: 1000px) {
+    .logo-nav{
+        width: 80px;
+    }
+    .mq{
+        display: none;
+    }
+    .main-nav>div{
+        padding: 2px;
+    }
+  }
+
+  @media only screen and (max-width: 615px) {
+    .logo-nav{
+        width: 70px;
+    }
+    .mq2{
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 510px) {
+    .logo-nav{
+        width: 60px;
+    }
+    .mq3{
+        display: none;
+    }
+  }
+.hrr{
+    margin: 0;
+}
+.mmain{
+    background-color: black;
+    height: auto;
+}
+.misc-img{
+    padding-top: 10px;
+    width: 35px;
+}
+.main-nav-2{
+    height: -100px;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: flex-end;
+}
+.main-nav-2>div{
+    padding: 5px 15px 5px 15px;
+}
+.main-nav-2>div>h5{
+    margin: 5px;
+    font-weight: 400;
+    letter-spacing: .6px;
+    font-size: 12.5px;
+}
+.logo-nav{
+    width: 100px;
+}
+.main-nav{
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-evenly;
+}
+.main-nav>div{
+    padding: 5px 15px;
+}
+.main-nav>div>h5{
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.logo-nav>img{
+    width: inherit;
+}
+#search-div{
+    background-color: black;
+    padding: 0 0 10px 30px;
+    margin: auto 30px auto 0;
+    height:30px;
+    width:300px;
+    position:relative;
+}
+
+#search-div>img {
+    background-color: black;
+    padding: 5px;
+    height:20px;
+    position:absolute;
+    right:0;
+    top:5px;
+}
+
+#search-div>img+input {
+    background-color: black;
+    padding-left: 15px;
+    border: 2px solid grey;
+    border-radius: 20px;
+    height: 115%;
+    width:100%;
+}
+</style>
+
+<body>
+    <!--nav-->
+    
+    
+<div class="mmain">
+    <div class="main-nav">
+        <div class="logo-nav">
+            <img src=" /header-images/logo.png" alt="">
+        </div>
+        <div class="mq">
+            <H5 id="mountain-btn">MOUNTAIN</H5>
+        </div>
+        <div class="mq">
+            <H5 id="road-btn">ROAD</H5>
+        </div>
+        <div class="mq">
+            <H5 id="active-btn">ACTIVE</H5>
+        </div>
+        <div class="mq">
+            <H5 id="electric-btn">ELECTRIC</H5>
+        </div>
+        <div class="mq">
+            <H5 id="kids-btn">KIDS</H5>
+        </div>
+        <div id="search-div">
+            <img src=" /header-images/search.png" alt="">
+            <input placeholder="Search" type="text">
+        </div>
+        <div class="mq2">
+            <H5>CONTACT</H5>
+        </div>
+        <div class="mq3">
+            <img class="misc-img" src=" /header-images/heart.png" alt="">
+        </div>
+        <div>
+            <img id="cart_btn_head" class="misc-img" src=" /header-images/cart.png" alt="">
+        </div>
+        <div>
+            <img  class="misc-img" src=" /header-images/user.png" alt="">
+        </div>
+    </div>
+    <hr class="hrr">
+    <div class="main-nav-2">
+        <div>
+            <h5>About us</h5>
+        </div>
+        <div>
+            <h5>Delivery</h5>
+        </div>
+        <div>
+            <h5>Payment</h5>
+        </div>
+        <div>
+            <h5>Contact</h5>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Catalougr -->
+
+    <div class="container">
+        <h1 class="catalog-title">CATALOGUE SPECIALIZED</h1>
+
+        <div class="category-grid">
+            <a href='Mountain/mountain.html' class='category-box'>
+                <div class="category-image">
+                    <img src="Images/mountain1.webp" alt="Category 1">
+                </div>
+                <div class="category-title">
+                    <h3>Mountain</h3>
+                </div>
+            </a>
+
+            <a href="Mountain/mountain.html" class="category-box" >
+                <div class="category-image">
+                    <img src="Images/active1.jpg" alt="Category 2">
+                </div>
+                <div class="category-title">
+                    <h3>Road</h3>
+                </div>
+            </a>
+
+            <a href="Mountain/mountain.html" class="category-box">
+                <div class="category-image">
+                    <img src="Images/active3.png" alt="Category 3">
+                </div>
+                <div class="category-title">
+                    <h3>Active</h3>
+                </div>
+            </a>
+
+            <a href="Mountain/mountain.html" class="category-box">
+                <div class="category-image">
+                    <img src="Images/electric1.webp" alt="Category 4">
+                </div>
+                <div class="category-title">
+                    <h3>Electric</h3>
+                </div>
+            </a>
+
+            <a href="Mountain/mountain.html" class="category-box">
+                <div class="category-image">
+
+                    <img src="Images/kid1.webp" alt="Category 5">
+                </div>
+                <div class="category-title">
+                    <h3>Kids</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+
+   <!-- footer -->
+
+    <footer id="footer">
+        <div id="footer-container">
+            <div id="footer">
+                <div class="footer_top">
+                    <div class="Social_media">
+                        <div class="logo">
+                            <img src="Images/home-logo.png" alt="">
+                        </div>
+                        <div>
+                            <a href="#"><img src="Images/youtube.svg" alt=""></a>
+                            <a href="#"><img src="Images/facebook.svg" alt=""></a>
+                            <a href="#"><img src="Images/Linkedin.png" alt=""></a>
+                            <a href="#"><img src="Images/instagram.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="about">
+                        <div>
+                            <h4>MOUNTAIN</h4>
+                            <a href="#">Cross Country</a>
+                            <a href="#">Downhill</a>
+                            <a href="#">Dirt Jump</a>
+                            <a href="#">Frames</a>
+                        </div>
+                        <div>
+                            <h4>ROAD</h4>
+                            <a href="#">Performance</a>
+                            <a href="#">Gravel</a>
+                            <a href="#">Cyclocross</a>
+                            <a href="#">Triathlon</a>
+                        </div>
+                        <div>
+                            <h4>ACTIVE</h4>
+                            <a href="#">Fitness</a>
+                            <a href="#">Transport</a>
+                            <a href="#">Comfort</a>
+                        </div>
+                        <div>
+                            <h4>ELECTRIC</h4>
+                            <a href="#">Road</a>
+                            <a href="#">Mountain</a>
+                            <a href="#">Active</a>
+                        </div>
+                        <div>
+                            <h4>KIDS</h4>
+                            <a href="#">Toddler</a>
+                            <a href="#">Little kids</a>
+                            <a href="#">Big kids</a>
+                        </div>
+                        <div>
+                            <h4>CUSTOMERS</h4>
+                            <a href="#">About us</a>
+                            <a href="#">Delivery</a>
+                            <a href="#">Payment</a>
+                            <a href="#">Contacts</a>
+                        </div>
+                        <div>
+                            <h4>SUPPORT</h4>
+                            <a href="#">Support center</a>
+                            <a href="#">Warranty</a>
+                            <a href="#">Bike registration</a>
+                            <a href="#">Shipping &amp; Delivery</a>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <h4>NEWSLETTER</h4>
+                        <div>
+                            <input type="text" class="news_join" placeholder="Join Our Newsletter">
+                            <button>JOIN</button>
+                        </div>
+                        <p>By submitting your email address you agree to the <span><a href="#" id="terms_con">Terms &amp; Conditions</a></span></p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>
+                        <span class="animated-copyright" style="color: #eb001b; font-size: 14px; line-height: 1;">&copy;</span>&nbsp; 1997 - 2022. Specialized Bicycle Components, Inc. All Rights Reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
+<script src="https://kit.fontawesome.com/593dd93f4e.js" crossorigin="anonymous"></script>

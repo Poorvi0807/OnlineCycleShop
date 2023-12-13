@@ -1,0 +1,249 @@
+body {
+  background-color: #363636;
+  margin: 0;
+  padding: 0;
+}
+
+#signup-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+#signup-container form {
+  width: 20%;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  padding: 5%;
+}
+
+#signup-container label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: bold;
+}
+
+#signup-container input[type="email"],
+#signup-container input[type="password"],
+#signup-container input[type="text"] {
+  width: 95%;
+  padding: 15px;
+  margin-bottom: 5%;
+  border: 1px solid #414141;
+  border-radius: 8px;
+}
+
+#signup-container button {
+  width: 100%;
+  margin: auto; /* Center the button */
+  margin-top: 10%;
+  background-color: #252525;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#signup-container button:hover {
+  background-color: #ed1c24;
+}
+
+#signup-container .password-toggle {
+  position: relative;
+}
+
+#signup-container .password-toggle span {
+  position: absolute;
+  right: -1%;
+  top: 45%;
+  cursor: pointer;
+  color: #999;
+}
+
+#signup-container .password-strength {
+  display: flex;
+  align-items: center;
+  margin-top: -2%;
+  margin-bottom: 4%;
+  width: 80%;
+}
+
+#signup-container .meter {
+  height: 5px;
+  background-color: #ccc;
+  border-radius: 4px;
+  transition: width 0.3s;
+}
+
+#signup-container .text {
+  width: 43%;
+  margin-left: 10px;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  font-size: 16px;
+}
+
+#signup-container .password-weak .meter {
+  width: 10%;
+  background-color: red;
+}
+
+#signup-container .password-medium .meter {
+  width: 60%;
+  background-color: orange;
+}
+
+#signup-container .password-strong .meter {
+  width: 100%;
+  background-color: green;
+}
+
+#signup-container .error {
+  color: red;
+  font-size: 12px;
+  display: block;
+  margin-top: -3%;
+  margin-bottom: 4%;
+}
+#signup-container input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  border: 10px solid #000;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+#signup-container .checkbox-label {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#signup-container p {
+  margin-top: 5%;
+  font-size: 12px;
+  text-align: center;
+}
+#signup-container #login {
+  margin-top: 5%;
+  font-size: 16px;
+  text-align: center;
+}
+
+#signup-container .error-message {
+  color: red;
+  font-size: 12px;
+  display: block;
+  margin-top: -3%;
+  margin-bottom: 4%;
+}
+/* CSS for the popup */
+#signup-container .signup-successful-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#signup-container .signup-successful-overlay-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  max-width: 400px; /* Adjust the maximum width as needed */
+}
+
+#signup-container .signup-successful-overlay .loading-gif {
+  margin-bottom: 10px;
+}
+
+#signup-container .signup-successful-overlay .loading-gif img {
+  width: 100px; /* Adjust the size as needed */
+}
+
+#signup-container .signup-successful-overlay p {
+  text-align: center;
+  margin: 0;
+}
+
+#navbar-container .user-profile {
+  display: none;
+}
+#navbar-container .search-bar {
+  margin-right: 20%;
+}
+
+/* responsive */
+@media (min-width: 100px) and (max-width: 200px) {
+  #signup-container form {
+    width: 0%;
+    margin: auto;
+  }
+}
+@media (min-width: 300px) and (max-width: 800px) {
+  #signup-container form {
+    width: 80%;
+  }
+  #signup-container input[type="email"],
+  #signup-container input[type="password"],
+  #signup-container input[type="text"] {
+    width: 90%;
+  }
+  #signup-container .password-strength {
+    width: 70%;
+    margin-left: 1%;
+  }
+  #signup-container .password-toggle span {
+    right: 2%;
+  }
+  #signup-container h2 {
+    margin-bottom: 10%;
+  }
+  #signup-container .popup {
+    width: 70%;
+  }
+  #signup-container .text {
+    width: 30%;
+  }
+  #navbar-container .navlogo {
+  margin-left: 20%;
+
+}
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+  #signup-container form {
+    width: 80%;
+    margin: auto;
+  }
+  #signup-container .popup {
+    width: 70%;
+  }
+  #signup-container .text {
+    width: 25%;
+  }
+
+  #signup-container .password-toggle span {
+    right: 2%;
+    top: 40%;
+   
+  }
+  #navbar-container .navlogo {
+  margin-left: 25%;
+
+}
+}

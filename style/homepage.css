@@ -1,0 +1,469 @@
+body {
+  background-color: #363636;
+}
+
+#homepage-container #body-start {
+  box-shadow: #c68409 0px 1px 10px 0px;
+  padding: 120px;
+  background-image: url(https://images.pexels.com/photos/8926943/pexels-photo-8926943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  width: 90%;
+  height: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  animation: slider 12s infinite ease;
+}
+
+@keyframes slider {
+  0% {
+    background-image: url(https://images.pexels.com/photos/8926943/pexels-photo-8926943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  }
+  35% {
+    background-image: url(https://images.pexels.com/photos/260409/pexels-photo-260409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  }
+  75% {
+    background-image: url(https://images.pexels.com/photos/3569754/pexels-photo-3569754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  }
+}
+
+#homepage-container #body-start1 {
+  font-size: 50px;
+  width: 100%;
+  color: white;
+}
+
+#homepage-container #body-start2 {
+  font-size: 18px;
+  width: 600px;
+  color: white;
+}
+
+#homepage-container #body-start3 {
+  font-size: 18px;
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid #c68409;
+  color: white;
+  border-radius: 7px;
+}
+
+#homepage-container #best-sellers {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#homepage-container #product-image {
+  width: 300px  ; /* Adjust the width to fit the container */
+  /* Maintain the aspect ratio */
+}
+#homepage-container #bs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#homepage-container #best-sellers-title {
+  font-size: 35px;
+  color: white;
+}
+
+#homepage-container #product {
+  width: 30%; /* Adjust the width to your desired value */
+  margin: 0 auto; /* Center the product boxes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: #c68409 0px 2px 10px 0px;
+}
+
+#homepage-container #product > p {
+  padding-left: 10px;
+  padding-top: 10px;
+  gap: 0;
+  font-size: 15px;
+  margin: 0;
+  color: black;
+  font-weight: 500;
+  text-align: center; /* Center the text within the product box */
+}
+
+#homepage-container #brain-tech-title {
+  font-size: 35px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+#homepage-container #bt {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+#homepage-container #brain-tech {
+  background-image: url(https://images.pexels.com/photos/15663448/pexels-photo-15663448/free-photo-of-bikers-sitting-on-bench.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  padding: 50px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: #c68409 0px 1px 10px 0px;
+  border-radius: 10px;
+}
+
+#homepage-container #brain-tech3 {
+  font-size: 18px;
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid #c68409;
+  color: white;
+  box-shadow: #c68409 0px 1px 10px 0px;
+  border-radius: 7px;
+}
+
+#homepage-container #brain-tech3:hover {
+  background-color: #eb001b;
+  color: white;
+  border: 2px solid #eb001b;
+}
+
+#homepage-container #body-start3:hover {
+  background-color: #eb001b;
+  color: white;
+  border: 2px solid #eb001b;
+}
+
+#homepage-container #body-tech1 {
+  font-size: 35px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+#homepage-container #body-tech2 {
+  font-size: 15px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+#homepage-container #before {
+  text-decoration: line-through;
+}
+
+#homepage-container #after {
+  color: red;
+}
+
+#homepage-container #more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#homepage-container #more1top {
+  background-image: url(https://images.pexels.com/photos/8757205/pexels-photo-8757205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  width: 1400px;
+  padding: 100px;
+  height: 400px;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: #c68409 0px 1px 10px 0px;
+}
+
+#homepage-container #more1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#homepage-container #head {
+  font-size: 40px;
+}
+
+#homepage-container #para {
+  font-size: 15px;
+}
+
+#homepage-container #more2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+#homepage-container #more2left {
+  background-image: url(https://images.pexels.com/photos/7782975/pexels-photo-7782975.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  width: 690px;
+  height: 400px;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 100px;
+  box-shadow: #c68409 0px 1px 10px 0px;
+}
+
+#homepage-container #more2right {
+  background-image: url(https://images.pexels.com/photos/37823/pexels-photo-37823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  width: 690px;
+  height: 400px;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 100px;
+  box-shadow: #c68409 0px 1px 10px 0px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  #homepage-container #body-start {
+    /* Adjust padding for smaller screens */
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+#homepage-container #product-image {
+  width: 100%;
+  height: 100%;
+ 
+}
+
+
+#homepage-container #product {
+  
+  width: 90%;
+ 
+ 
+}
+
+  #homepage-container #body-start1 {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    /* Adjust font size for smaller screens */
+  }
+
+  #homepage-container #body-start2 {
+    font-size: 16px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    /* Adjust font size for smaller screens */
+  }
+
+  #homepage-container #body-start3.button {
+    font-size: 14px;
+    /* Adjust font size for smaller screens */
+  }
+
+  /* Add any additional styles for smaller screens */
+
+  /* Default styles for all screen sizes */
+
+  #homepage-container #best-sellers {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+    width: 90%;
+  }
+
+  #homepage-container #best-sellers-title {
+    width: 90%;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #homepage-container #bt {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+  #homepage-container #brain-tech-title,
+  #body-tech1 {
+    width: 90%;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #homepage-container #brain-tech {
+    height: auto;
+    text-align: center; /* Allow height to adjust based on content */
+  }
+
+  #homepage-container #brain-tech3 {
+    font-size: 18px;
+  }
+  #homepage-container #more1top {
+    width: 90%; /* Adjust width for smaller screens */
+    height: 300px; /* Adjust height for smaller screens */
+    padding: 25px; /* Adjust padding for smaller screens */
+  }
+  #homepage-container #more1 #head {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+  #homepage-container #more1 #para {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  #homepage-container #more2 {
+    flex-direction: column; /* Adjust flex-direction for smaller screens */
+    align-items: center;
+  }
+
+  #homepage-container #more2left {
+    display: none;
+  }
+  #homepage-container #more2right {
+    width: 90%; /* Adjust width for smaller screens */
+    height: 300px; /* Adjust height for smaller screens */
+    padding: 30px; /* Adjust padding for smaller screens */
+  }
+  #homepage-container #more2 #head {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+  #homepage-container #more2 #para {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+  
+
+  /* Add any additional styles for smaller screens */
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  #homepage-container #body-start {
+    /* Adjust padding for smaller screens */
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #homepage-container #body-start1 {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    /* Adjust font size for smaller screens */
+  }
+
+  #homepage-container #body-start2 {
+    font-size: 16px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    /* Adjust font size for smaller screens */
+  }
+
+  #homepage-container #body-start3.button {
+    font-size: 14px;
+    /* Adjust font size for smaller screens */
+  }
+
+  /* Add any additional styles for smaller screens */
+
+  /* Default styles for all screen sizes */
+
+  #homepage-container #best-sellers {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  #homepage-container #best-sellers-title {
+    width: 90%;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #homepage-container #bt {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+  #homepage-container #brain-tech-title,
+  #body-tech1 {
+    width: 90%;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #homepage-container #brain-tech {
+    height: auto;
+    text-align: center; /* Allow height to adjust based on content */
+  }
+
+  #homepage-container #brain-tech3 {
+    font-size: 18px;
+  }
+  #homepage-container #more1top {
+    width: 90%; /* Adjust width for smaller screens */
+    height: 300px; /* Adjust height for smaller screens */
+    padding: 25px; /* Adjust padding for smaller screens */
+  }
+  #homepage-container #more1 #head {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+  #homepage-container #more1 #para {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  #homepage-container #more2 {
+    flex-direction: column; /* Adjust flex-direction for smaller screens */
+    align-items: center;
+  }
+
+  #homepage-container #more2left {
+    display: none;
+  }
+  #homepage-container #more2right {
+    width: 90%; /* Adjust width for smaller screens */
+    height: 300px; /* Adjust height for smaller screens */
+    padding: 30px; /* Adjust padding for smaller screens */
+  }
+  #homepage-container #more2 #head {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+  #homepage-container #more2 #para {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+  
+  #homepage-container #product-image {
+  width: 100%;
+  height: auto;
+}
+  /* Add any additional styles for smaller screens */
+}

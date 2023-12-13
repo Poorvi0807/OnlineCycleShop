@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://www.specialized.com/_ui/addons/specializedstorefrontaddon/desktop/common/images/favicon.ico?v=1.1"/>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/f5664c1180.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&family=Roboto+Condensed:wght@400;700&family=Wix+Madefor+Text:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    
+   <link rel="stylesheet" href="../style/cart.css" />
+<link rel="stylesheet" href="../style/navBar.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <title>Specialized</title>
+   
+    
+</head>
+<body>
+   <div id="navbar-container">
+      <div class="navbar">
+        <div class="logo-menu navlogo" id="logo-menu">
+          <nav>
+            <img src="../Images/logo.png" class="navlogo" alt="logo" />
+            <ul>
+              <li><a href="catalogue.html  ">Catalog</a></li>
+              <li><a href="wishlist.html">Wishlist</a></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="search-bar">
+          <div id="nav_search_userpro">
+            <!-- <input type="search" placeholder="Search" id="search"> -->
+            <input id="search-input" type="search" placeholder="Search..." />
+            <ul id="search-results"></ul>
+            <button><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+
+        <div class="user-profile">
+          <div id="loginOption" class="login-option">Login</div>
+          <img
+            src="../Images/user.png"
+            class="user-pic auth-user-pic"
+            id="userPic"
+          />
+          <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+              <div class="user-info">
+                <img src="../Images/user.png" />
+                <h3></h3>
+              </div>
+              <hr />
+
+              <a href="cart.html" class="sub-menu-link">
+                <img src="../Images/cart.png" />
+                <p>Cart</p>
+                <span> > </span>
+              </a>
+              <a href="catalogue.html" class="sub-menu-link catalogue-link">
+                <img src="../Images/catalogue.png" />
+                <p>Catalogue</p>
+                <span> > </span>
+              </a>
+              <a href="#" class="sub-menu-link">
+                <img src="../Images/setting.png" />
+                <p>Settings</p>
+                <span> > </span>
+              </a>
+              <a href="wishlist.html" class="sub-menu-link">
+                <img src="../Images/whishlist.png" />
+                <p>Wishlist</p>
+                <span> > </span>
+              </a>
+              <a href="signin.html" class="sub-menu-link" id="logoutButton">
+                <img src="../Images/logout.png" />
+                <p>Logout</p>
+                <span> > </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- overlay loading container start -->
+
+    <div id="nav-logo-overlay-container">
+      <div class="nav-logo-overlay">
+        <img src="../Images/Loading gif.gif" alt="Loading..." />
+      </div>
+    </div>
+
+     <!-- overlay loading container ends  -->
+     <!--nav ends-->
+
+
+    <main>
+      
+        <div id="orderitem">
+        <p><i class="fa-solid fa-house"></i> --- Your Order</p>
+        <h2>YOUR ORDER</h2>
+        <div id="cart">
+
+        </div>
+        <!-- <h3>WE RECOMMEND:</h3> -->
+        <div>
+        <i></i>
+        <div id="recommend"></div>
+        <i></i>
+        </div>
+        
+        <div id="detailsAmount">
+
+        <div id="orderDetails">
+            <div>
+                <i class="fa-solid fa-truck fa-2xl"></i>
+                <p>FAST DELIVERY</p>
+                <p>We will deliver your within 48 hours</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-gear fa-2xl"></i>
+                <p>IMPECCABLE SERVICE</p>
+                <p>We will help you to assemble the bike after delivery</p>
+            </div>
+            <div>
+                <i class="fa-regular fa-credit-card fa-2xl"></i>
+                
+                <p>SECURE PAYMENT</p>
+                <p>We use 3D-secure to protect all payments</p>
+            </div>
+        </div>
+        <div id="amount">
+            <div><p>TOTAL:</p></div>
+            <div>            
+                <p id="displayMRP"></p>
+                <p id="finalAmt"></p>
+            <button id="gotoPmt" onclick="window.location.href = 'payment.html';">MAKE AN ORDER</button>
+            </div>
+  
+        </div>
+    </div>
+        </div>
+    </main>
+
+   <!-- footer -->
+    	<footer id="footer">
+         <div id="footer-container">
+    <div id="footer">
+        <div class="footer_top">
+            <div class="Social_media">
+                <div class="logo">
+                    <img src="../Images/home-logo.png" alt="">
+                </div>
+                <div>
+                    <a href="#"><img src="../Images/icons8-youtube.svg" alt=""></a>
+                    <a href="#"><img src="../Images/icons8-facebook.svg" alt=""></a>
+                    <a href="#"><img src="../Images/Linkedin-logo.png" alt=""></a>
+                    <a href="#"><img src="../Images/icons8-instagram.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="about">
+                <div>
+                    <h4>MOUNTAIN</h4>
+                    <a href="#">Cross Country</a>
+                    <a href="#">Downhill</a>
+                    <a href="#">Dirt Jump</a>
+                    <a href="#">Frames</a>
+                </div>
+                <div>
+                    <h4>ROAD</h4>
+                    <a href="#">Performance</a>
+                    <a href="#">Gravel</a>
+                    <a href="#">Cyclocross</a>
+                    <a href="#">Triathlon</a>
+                </div>
+                <div>
+                    <h4>ACTIVE</h4>
+                    <a href="#">Fitness</a>
+                    <a href="#">Transport</a>
+                    <a href="#">Comfort</a>
+                </div>
+                <div>
+                    <h4>ELECTRIC</h4>
+                    <a href="#">Road</a>
+                    <a href="#">Mountain</a>
+                    <a href="#">Active</a>
+                </div>
+                <div>
+                    <h4>KIDS</h4>
+                    <a href="#">Toddler</a>
+                    <a href="#">Little kids</a>
+                    <a href="#">Big kids</a>
+                </div>
+                <div>
+                    <h4>CUSTOMERS</h4>
+                    <a href="#">About us</a>
+                    <a href="#">Delivery</a>
+                    <a href="#">Payment</a>
+                    <a href="#">Contacts</a>
+                </div>
+                <div>
+                    <h4>SUPPORT</h4>
+                    <a href="#">Support center</a>
+                    <a href="#">Warranty</a>
+                    <a href="#">Bike registration</a>
+                    <a href="#">Shipping &amp; Delivery</a>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h4>NEWSLETTER</h4>
+                <div>
+                    <input type="text" class="news_join" placeholder="Join Our Newsletter">
+                    <button>JOIN</button>
+                </div>
+                <p>By submitting your email address you agree to the <span><a href="#" id="terms_con">Terms &amp; Conditions</a></span></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                <span class="animated-copyright"
+                    style="color: #eb001b; font-size: 14px; line-height: 1;">&copy;</span>&nbsp;
+                1997 - 2022. Specialized Bicycle Components, Inc. All Rights Reserved
+            </p>
+            <p class="animated-text" style="color: #c68409; overflow: hidden;">Created with <span style="color: red;">&hearts;</span> in <span style="color: #ebe2e3;">masai</span> <span style="color: goldenrod;">&#x1F60A;</span></p>
+        </div>
+    </div>
+</div>
+
+    </footer>
+
+</body>
+</html>
+<script src="../scripts/cart.js"></script>
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+<script type="module" src="../scripts/navBar.js"></script>
+
+
+
+
+    
+
+    <script src="https://kit.fontawesome.com/593dd93f4e.js" crossorigin="anonymous"></script>
+
+
+    <script src="https://kit.fontawesome.com/593dd93f4e.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ad020c6830.js" crossorigin="anonymous"></script>
