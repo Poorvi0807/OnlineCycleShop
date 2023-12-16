@@ -4,11 +4,11 @@ body {
 
 #homepage-container #body-start {
   box-shadow: #c68409 0px 1px 10px 0px;
-  padding: 120px;
-  background-image: url(https://images.pexels.com/photos/8926943/pexels-photo-8926943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  padding: 100px;
+  background-image: url(../Images/BG/2.png);
   width: 90%;
-  height: 500px;
-  margin: 20px auto;
+  height: 600px;
+  margin: 5px auto;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -17,13 +17,13 @@ body {
 
 @keyframes slider {
   0% {
-    background-image: url(https://images.pexels.com/photos/8926943/pexels-photo-8926943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url(../Images/BG/2.png);
   }
   35% {
-    background-image: url(https://images.pexels.com/photos/260409/pexels-photo-260409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url(../Images/BG/1.png);
   }
   75% {
-    background-image: url(https://images.pexels.com/photos/3569754/pexels-photo-3569754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url(../Images/BG/3.png);
   }
 }
 
@@ -115,7 +115,7 @@ body {
 }
 
 #homepage-container #brain-tech {
-  background-image: url(https://images.pexels.com/photos/15663448/pexels-photo-15663448/free-photo-of-bikers-sitting-on-bench.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-image: url(../Images/BG/CY.png);
   padding: 50px;
   height: 600px;
   display: flex;
@@ -217,7 +217,7 @@ body {
 }
 
 #homepage-container #more2left {
-  background-image: url(https://images.pexels.com/photos/7782975/pexels-photo-7782975.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-image: url(..//Images/BG/ft\ \(1\).png);
   width: 690px;
   height: 400px;
   background-position: center;
@@ -230,7 +230,7 @@ body {
 }
 
 #homepage-container #more2right {
-  background-image: url(https://images.pexels.com/photos/37823/pexels-photo-37823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-image: url(../Images/BG/ft\ \(2\).png);
   width: 690px;
   height: 400px;
   background-position: center;
