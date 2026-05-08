@@ -2,7 +2,7 @@
 
 <h2>🚀 Demo</h2>
 
-[https://cycleshopspecialized.netlify.app/](https://cycleshopspecialized.netlify.app/)
+[https://cycleshopspecialized.netlify.app/](https://online-cycle-shop.vercel.app/)
 
 <h2>Project Screenshots:</h2>
 
